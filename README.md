@@ -12,7 +12,8 @@ GenomeSyn is open source,so you can download the source code and modify the appr
 If you use the GenomeSyn, you need to solve the software dependency problem first.
 You can download example data to test .
 ## Dependencies 
-1. MUMmer 
+***1. MUMmer***
+
 You can find MUMmer [HERE](https://github.com/mummer4/mummer/releases). We used Mummer-4.0.0beta2. Mummer version 4.x.x requires a recent version of the GCC compiler (g++ version >= 4.7), which is hard to install if you have no ***administrator authority***. You can ask your system administrator for some help in this case. 
 
 ```
@@ -25,7 +26,9 @@ $ make
 $ export PATH=/your_path/GenomeSyn/mummer-4.0.0beta2:$PATH 
 ```
 
-2. Perl and perl module we recommend that the version of perl should be at least 5.10.0 (use perl -v to check the version). Although most of the GenomeSyn modules used already exist, you may still need to install the SVG module and the BioPerl module. Due to the lack of administrator rights, it is sometimes troublesome to install perl modules under Linux systems. This page introduces two installations of the [SVG](https://cpan.metacpan.org/authors/id/M/MA/MANWAR/SVG-2.85.tar.gz "SVG") module and three installations [BioPerl] (https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.7.8.tar.gz "BioPerl") module method, but in fact cpanm is the most friendly installation perl module method. You can find the pre-compiled source code of cpanm here [page](https://bioperl.org/INSTALL.html). There are SVG and BioPerl compressed packages in our GenomeSyn, which can be installed and used after decompression. 
+***2. Perl and perl module***
+
+We recommend that the version of perl should be at least 5.10.0 (use perl -v to check the version). Although most of the GenomeSyn modules used already exist, you may still need to install the SVG module and the BioPerl module. Due to the lack of administrator rights, it is sometimes troublesome to install perl modules under Linux systems. This page introduces two installations of the [SVG](https://cpan.metacpan.org/authors/id/M/MA/MANWAR/SVG-2.85.tar.gz "SVG") module and three installations [BioPerl] (https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.7.8.tar.gz "BioPerl") module method, but in fact cpanm is the most friendly installation perl module method. You can find the pre-compiled source code of cpanm here [page](https://bioperl.org/INSTALL.html). There are SVG and BioPerl compressed packages in our GenomeSyn, which can be installed and used after decompression. 
 
 ### install SVG 
 ```
@@ -57,7 +60,7 @@ $ make test
 ```
 $ PERL5LIB=/your_path/GenomeSyn/BioPerl-1.7.8/lib:$PERL5LIB 
 ```
-3. Python and python module 
+***3. Python and python module***
 
 Here we need to use python's svglib package to convert the output SVG file into a PDF file. 
 Install [Python] (https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz "Python") and svglib[svglib] (https://files.pythonhosted.org/ packages/c0/2c/5ab28095c9ce09a6d341cb37c0ad3a7ffc65e5c5f2eaa2247c085679ca2f/svglib-1.1.0.tar.gz "svglib") package can refer to the following: 
