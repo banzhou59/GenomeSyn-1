@@ -34,7 +34,7 @@ We recommend that the version of perl should be at least 5.10.0 (use perl -v to 
 ```
 $ cpanm SVG 
 ```
-#Unzip and install SVG 
+### Unzip and install SVG 
 ```
 $ tar -zxvf SVG-2.85.tar.gz 
 $ cd SVG-2.85/ 
@@ -63,7 +63,7 @@ $ PERL5LIB=/your_path/GenomeSyn/BioPerl-1.7.8/lib:$PERL5LIB
 ***3. Python and python module***
 
 Here we need to use python's svglib package to convert the output SVG file into a PDF file. 
-Install [Python] (https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz "Python") and svglib[svglib] (https://files.pythonhosted.org/ packages/c0/2c/5ab28095c9ce09a6d341cb37c0ad3a7ffc65e5c5f2eaa2247c085679ca2f/svglib-1.1.0.tar.gz "svglib") package can refer to the following: 
+Install [Python] (https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz) and [svglib] (https://files.pythonhosted.org/ packages/c0/2c/5ab28095c9ce09a6d341cb37c0ad3a7ffc65e5c5f2eaa2247c085679ca2f/svglib-1.1.0.tar.gz) package can refer to the following: 
 ```
 $ tar -zxvf Python-3.9.4.tgz -C ./ 
 $ cd ./Python-3.9.4 
