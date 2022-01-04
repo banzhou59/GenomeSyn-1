@@ -2685,7 +2685,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 		
 		 #Annotation information
 		 #Draw Comment Area
-		 ##centromere ×ÅË¿Á£
+		 ##centromere ç€ä¸ç²’
 		if($a<$targetChrnum)
 		 {
 			 if($refcentromere)
@@ -2749,7 +2749,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 				}
 				 else
 				 {	 
-					 #reference centromere ×ÅË¿Á£
+					 #reference centromere ç€ä¸ç²’
 					 open REF_centromere,"$inputFile7";
 					 while(<REF_centromere>){
 						 chomp;
@@ -2860,7 +2860,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 				}
 				 else
 				 {
-					 #query1 centromere ×ÅË¿Á£
+					 #query1 centromere ç€ä¸ç²’
 					 open QUERY1_centromere,"$inputFile6";
 					 while(<QUERY1_centromere>){
 						 chomp;
@@ -2913,7 +2913,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 		 {
 			 if($reftelomere)
 			 {
-				 #reference telomere ¶ËÁ£
+				 #reference telomere ç«¯ç²’
 				 open REF_telomere,"$inputFile9";
 				 while(<REF_telomere>){
 					 chomp;
@@ -3992,7 +3992,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 					
 					 if($reftelomere or $query1telomere)
 					 {
-						 #reference legend ¶ËÁ£
+						 #reference legend ç«¯ç²’
 						 my $x1 = $icon_x+24;
 						 my $y1 = $icon_y-24;
 						 my $x2 = $x1-24;
@@ -4075,7 +4075,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 
 					 if($icon_centromere and ($refcentromere or $query1centromere))
 					 {
-						 #centromere legend ×ÅË¿Á£
+						 #centromere legend ç€ä¸ç²’
 						 
 						 $svg->rect(
 							 x=>$icon_x,
@@ -4643,7 +4643,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 					}
 					 if($icon_centromere and ($refcentromere or $query1centromere))
 					 {
-						 #centromere legend ×ÅË¿Á£
+						 #centromere legend ç€ä¸ç²’
 						 
 						 $svg->rect(
 							 x=>$icon_x,
@@ -4781,7 +4781,7 @@ if( ($genomenumber==2) and (($aligntype==1)or($aligntype==3)) )
 					}					
 					 if($reftelomere or $query1telomere)
 					 {
-						 #reference legend ¶ËÁ£
+						 #reference legend ç«¯ç²’
 						 my $x1 = $icon_x+24;
 						 my $y1 = $icon_y-24;
 						 my $x2 = $x1-24;
@@ -7289,7 +7289,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
         }
 
 		 #Draw Comment Area
-		 ##centromere ×ÅË¿Á£
+		 ##centromere ç€ä¸ç²’
 		if($a<$targetChrnum)
 		 {
 			 if($refcentromere)
@@ -7349,7 +7349,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 				}
 				 else
 				 {	 
-					 #reference centromere ×ÅË¿Á£
+					 #reference centromere ç€ä¸ç²’
 					 open REF_centromere,"$inputFile7";
 					 while(<REF_centromere>){
 						 chomp;
@@ -7456,7 +7456,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 				}
 				 else
 				 {
-					 #query1 centromere ×ÅË¿Á£
+					 #query1 centromere ç€ä¸ç²’
 					 open QUERY1_centromere,"$inputFile6";
 					 while(<QUERY1_centromere>){
 						 chomp;
@@ -7563,7 +7563,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 				 }
 				 else
 				 {			 
-					 #query2 centromere ×ÅË¿Á£
+					 #query2 centromere ç€ä¸ç²’
 					 open QUERY2_centromere,"$inputFile66";
 					 while(<QUERY2_centromere>){
 						 chomp;
@@ -7616,7 +7616,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 		 {
 			 if($reftelomere)
 			 {
-				 #reference telomere ¶ËÁ£
+				 #reference telomere ç«¯ç²’
 				 open REF_telomere,"$inputFile9";
 				 while(<REF_telomere>){
 					 chomp;
@@ -8841,7 +8841,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 					
 					 if($reftelomere or $query1telomere or $query2telomere)
 					 {
-						 #reference legend ¶ËÁ£
+						 #reference legend ç«¯ç²’
 						 my $x1 = $icon_x+24;
 						 my $y1 = $icon_y-24;
 						 my $x2 = $x1-24;
@@ -8924,7 +8924,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 
 					 if( $icon_centromere and ($refcentromere or $query1centromere or $query2centromere ) )
 					 {
-						 #centromere legend ×ÅË¿Á£
+						 #centromere legend ç€ä¸ç²’
 						 
 						 $svg->rect(
 							 x=>$icon_x,
@@ -9553,7 +9553,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 					}
 					 if( $icon_centromere and ($refcentromere or $query1centromere or $query2centromere ) )
 					 {
-						 #centromere legend ×ÅË¿Á£
+						 #centromere legend ç€ä¸ç²’
 						 
 						 $svg->rect(
 							 x=>$icon_x,
@@ -9691,7 +9691,7 @@ elsif( ($genomenumber==3) and (($aligntype==1)or($aligntype==3)) )
 					}					
 					 if($reftelomere or $query1telomere or $query2telomere)
 					 {
-						 #reference legend ¶ËÁ£
+						 #reference legend ç«¯ç²’
 						 my $x1 = $icon_x+24;
 						 my $y1 = $icon_y-24;
 						 my $x2 = $x1-24;
@@ -12945,7 +12945,7 @@ GenomeSyn [options]
 
 example:
     
-	a) GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
+    a) GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
 
     b) GenomeSyn -t 3 -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa -cf1 ../data/rice_MH63vsZS97.delta.filter.coords
 
@@ -12991,7 +12991,7 @@ Format transition, generate the corresponding PDF format file with the SVG forma
 
 =item B<-sort>
 
--sort²ÎÊýÓÐÁ½ÖÖÄ£Ê½£¬"match"ºÍ"reference_length_match",Ä¬ÈÏ²»ÅÅÐò¡£"match"Ä£Ê½¹¦ÄÜ£º°´ÕÕreferenceµÄÈ¾É«Ìå±àºÅ¶ÔqueryµÄÈ¾É«Ìå±àºÅ½øÐÐ×î¼ÑÆ¥ÅäÅÅÐò£»"reference_length_match"Ä£Ê½¹¦ÄÜ£ºÏÈ°´È¾É«Ìå³¤¶È´Ó³¤µ½¶Ì¶ÔreferenceµÄÈ¾É«Ìå±àºÅ½øÐÐÅÅÐò£¬ÔÙ°´×î¼ÑÆ¥Åä¶ÔqueryµÄÈ¾É«Ìå±àºÅ½øÐÐÅÅÐò
+The -sort parameter has two modes, "match" and "reference_length_match", which are not sorted by default. "match" mode function: according to the chromosome number of the reference, the chromosome number of the query is sorted for the best match; "reference_length_match" mode function: first sort the reference chromosome numbers according to the chromosome length from long to short, and then sort the query chromosome numbers according to the best match.
 
 =item B<-chromosomename/-cn>
 
