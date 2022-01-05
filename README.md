@@ -7,10 +7,7 @@ An online service of GenomeSyn at: https://cbi.gxu.edu.cn/GenomeSyn/.
 
 ## Install
 
-Simple click to GenomeSyn(Perl)/GenomeSyn(Python). They are executable files, you can run it directly.
-GenomeSyn is open source,so you can download the source code and modify the appropriate source code to suit their needs. (Perl/Python)
-If you use the GenomeSyn, you need to solve the software dependency problem first.
-You can download example data to test .
+GenomeSyn is an executable file written in Perl, and users can run it directly. But before using GenomeSyn, the software dependency problem needs to be solved first. Users can download sample data for testing.
 ## Dependencies 
 ***1. MUMmer***
 
@@ -82,7 +79,10 @@ $ cd svglib-1.1.0/
 $ /your_path/GenomeSyn/Python-3.9.4/python setup.py install 
 ```
 There is an install.sh script in our GenomeSyn package. Running this shell script can help us install the required modules (SVG, BioPerl, Python and svglib of python module) and add environment variables for the corresponding modules. After running this shell script, reload the environment variables to run.
-
+```
+# reload the environment variables
+$ source ~/.bashrc
+```
 # Quick start
 
 	eg. GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
