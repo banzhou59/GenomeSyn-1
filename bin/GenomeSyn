@@ -12945,7 +12945,7 @@ GenomeSyn [options]
 
 example:
     
-	a) GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
+    a) GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
 
     b) GenomeSyn -t 3 -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa -cf1 ../data/rice_MH63vsZS97.delta.filter.coords
 
