@@ -1,9 +1,10 @@
-# [GenomeSyn](https://cbi.gxu.edu.cn/GenomeSyn/)
+# [GenomeSyn](http://cbi.gxu.edu.cn/GenomeSyn/)
 We developed GenomeSyn as a new tool for constructing and visualizing genome synteny, its novel design and implementation can serve as a necessary complement to the study of genomic synteny and structural variation and its visualization tools.
 
-An online service of GenomeSyn at: https://cbi.gxu.edu.cn/GenomeSyn/. 
+An online service of GenomeSyn at: http://cbi.gxu.edu.cn/GenomeSyn/. 
 
-![fig1](https://user-images.githubusercontent.com/84839565/147895831-1c6e7f17-9c85-4478-89df-2beccb78586a.png)
+![figure1-v9](https://user-images.githubusercontent.com/84839565/156312609-722f68de-4fc6-419f-9080-8072692ec0a1.png)
+
 
 ## Install
 
@@ -11,7 +12,7 @@ GenomeSyn is an executable file written in Perl, and users can run it directly. 
 ## Dependencies 
 ***1. MUMmer***
 
-You can find MUMmer [HERE](https://github.com/mummer4/mummer/releases). We used Mummer-4.0.0beta2. Mummer version 4.x.x requires a recent version of the GCC compiler (g++ version >= 4.7), which is hard to install if you have no ***administrator authority***. You can ask your system administrator for some help in this case. 
+You can find MUMmer [here](https://github.com/mummer4/mummer/releases). We used Mummer-4.0.0beta2. Mummer version 4.x.x requires a recent version of the GCC compiler (g++ version >= 4.7), which is hard to install if you have no ***administrator authority***. You can ask your system administrator for some help in this case. 
 
 ```
 $ wget https://github.com/mummer4/mummer/releases/download/v4.0.0beta2/mummer-4.0.0beta2.tar.gz 
@@ -25,12 +26,12 @@ $ export PATH=/your_path/GenomeSyn/mummer-4.0.0beta2:$PATH
 
 ***2. Perl and perl module***
 
-We recommend that the version of perl should be at least 5.10.0 (use perl -v to check the version). 
+We recommend that the version of perl should be at least 5.10.0 (use perl -v to check the version).
 ```
 # check the version
 $ perl -v
 ```
-Although most of the GenomeSyn modules used already exist, you may still need to install the SVG module and the BioPerl module. Due to the lack of administrator rights, it is sometimes troublesome to install perl modules under Linux systems. This page introduces two installations of the [SVG](https://cpan.metacpan.org/authors/id/M/MA/MANWAR/SVG-2.85.tar.gz) module and three installations [BioPerl](https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.7.8.tar.gz) module method, but in fact cpanm is the most friendly installation perl module method. You can find the pre-compiled source code of cpanm here [page](https://bioperl.org/INSTALL.html). There are SVG and BioPerl compressed packages in our GenomeSyn, which can be installed and used after decompression. 
+Although most of the GenomeSyn modules used already exist, you may still need to install the SVG module and the BioPerl module. Due to the lack of administrator rights, it is sometimes troublesome to install perl modules under Linux systems. This page introduces two installations of the [SVG](https://cpan.metacpan.org/authors/id/M/MA/MANWAR/SVG-2.85.tar.gz) module and three installations [BioPerl](https://cpan.metacpan.org/authors/id/C/CJ/CJFIELDS/BioPerl-1.7.8.tar.gz) module method, but in fact cpanm is the most friendly installation perl module method. You can find the pre-compiled source code of cpanm [here](https://bioperl.org/INSTALL.html). There are SVG and BioPerl compressed packages in our GenomeSyn, which can be installed and used after decompression. 
 
 ### install SVG 
 ```
@@ -78,11 +79,12 @@ $ tar -zxvf svglib-1.1.0.tar.gz -C ./
 $ cd svglib-1.1.0/ 
 $ /your_path/GenomeSyn/Python-3.9.4/python setup.py install 
 ```
-There is an install.sh script in our GenomeSyn package. Running this shell script can help us install the required modules (SVG, BioPerl, Python and svglib of python module) and add environment variables for the corresponding modules. After running this shell script, reload the environment variables to run.
+There is an [install.sh](https://github.com/JM-SONG/GenomeSyn/blob/a4ea7c0582f81fb47c73f86e5719da48a3c8930d/install.sh) script in our GenomeSyn package. Running this shell script can help us install the required modules (SVG, BioPerl, Python and svglib of python module) and add environment variables for the corresponding modules. After running this shell script, reload the environment variables to run.
 ```
 # reload the environment variables
 $ source ~/.bashrc
 ```
+
 # Quick start
 
 	eg. GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
