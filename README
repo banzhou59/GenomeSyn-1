@@ -6,9 +6,8 @@ GenomeSyn is an easy-to-use application, users only need to submit two or three 
 3. Perform genomic synteny analysis and visualization based on the files and parameters provided by the user. GenomeSyn is very easy to download, use and install. You can download and unzip the GenomeSyn package using wget or through git. 
 ```
 #download the GenomeSyn
-Wget https://cbi.gxu.edu.cn/GenomeSyn//download/GenomeSyn1.2.0.tar.gz/
-or 
-git clone https://github.com/JM-SONG/GenomeSyn.git
+$ git clone git@github.com:banzhou59/GenomeSyn.git
+
 ```
 ## Dependencies
 1. MUMmer  
