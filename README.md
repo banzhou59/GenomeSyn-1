@@ -70,10 +70,6 @@ $ /your_path/GenomeSyn/Python-3.9.4/python setup.py install
 ```
 There is an install.sh script in our GenomeSyn package. Running this shell script can help us install the required modules (SVG, BioPerl, Python and svglib of python module) and add environment variables for the corresponding modules. After running this shell script, reload the environment variables to run.
 
-###Input files
-We need to run GenomeSyn in the bin directory of the GenomeSyn package, and at least need to enter two genome sequence files. The genome sequence file should be a fasta file with the following format:
-When running GenomeSyn, at least two genome sequence files are required.
-
 # Quick start
 
 	eg. GenomeSyn -g1 ../data/rice_MH63.fa -g2 ../data/rice_ZS97.fa
